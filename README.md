@@ -1,5 +1,14 @@
 # NoCorrections
-Removes all corrections made to hit rolls.  Note: may cause blood pressure to rise during gameplay because pure RNG has no mercy.
+Removes all corrections made to hit rolls.
+
+Specifically:
+
+1) It no longer tries to break streaks of misses the player has
+
+2) It no longer does added math to the hit calculation, that would make easy shots even easier, and hard shots even harder.
+
+
+Note: may cause blood pressure to rise during gameplay because pure RNG has no mercy.
 
 # Installation Instructions
 
