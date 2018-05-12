@@ -9,11 +9,11 @@ namespace NoCorrectedRoll
 {
     class CorrectionPatch
     {
-        [HarmonyPatch(typeof(BattleTech.AttackDirector))]
+        [HarmonyPatch(typeof(BattleTech.AttackDirector.AttackSequence))]
         [HarmonyPatch("GetCorrectedRoll")]
         public static class BattleTech_CorrectedRoll_Prefix
         {
-            static bool Prefix(AttackDirector __instance, ref float __result, ref float roll, ref Team team)
+            static bool Prefix(AttackDirector.AttackSequence __instance, ref float __result, ref float roll, ref Team team)
             {
                 __result = roll;
 
